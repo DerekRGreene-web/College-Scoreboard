@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Scoreboard | Live NCAA Hoops & Football</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Main Site Header -->
+  <header>
+    <h1 id="Title">College Scoreboard</h1>
+  </header>
+
+  <!-- Two-Column Layout: Daily Slate (Left) & Live Games (Right) -->
+  <main class="container">
+
+    <!-- Daily Schedule & Completed Games (Resets at Midnight EST) -->
+    <section class="SLATE">
+      <h1>SLATE</h1>
+      <br>
+
+      <!-- Men's College Basketball Schedule -->
+      <h2>College Basketball</h2>
+      <br>
+      <div class="Hoops">
+        <ul>
+          <li class="Game"><h2>Loading basketball slate...</h2></li>
+        </ul>
+      </div>
+
+      <br>
+
+      <!-- FBS College Football Schedule -->
+      <h2>College Football</h2>
+      <br>
+      <div class="Ball">
+        <ul>
+          <li class="Game"><h2>Loading football slate...</h2></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Active In-Progress Games -->
+    <section class="LIVE">
+      <h1>LIVE</h1>
+      <br>
+      <ul id="live-games">
+        <li class="Scoreboard"><h2>Loading live games...</h2></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Frontend Polling & DOM Rendering Script -->
+<script src="app.js?v=7"></script>
+</body>
+</html>

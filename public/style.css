@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* =========================================
+   1. Global Reset & Base Theme
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fffbee;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    background: linear-gradient(to bottom left, #0d130a, #02343E);
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================================
+   2. Header & Page Title
+   ========================================= */
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+#Title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: bold;
+    font-size: 10vw;
+}
+
+/* =========================================
+   3. Main Two-Column Layout Containers
+   ========================================= */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.SLATE,
+.LIVE {
+    border: 2px dotted #02343E;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 49%;
+    max-width: 800px;
+    flex: 1;
+}
+h1 {
+    text-align: center;
+    font-size: 2.0em;
+}
+/* =========================================
+   4. Daily Slate Game Rows
+   ========================================= */
+.Game {
+    display: flex;
+    gap: 15px;
+    margin: 10px auto;
+}
+
+.Game h3 {
+    margin-left: auto;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* =========================================
+   5. Live Scoreboard Cards (3-Column Grid)
+   ========================================= */
+.Scoreboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    border-bottom: 2px dotted #02343E;
+    margin: 15px auto;
+    padding-bottom: 10px;
+}
+
+.Scoreboard p {
+    text-align: center;
+    font-size: 1.4em;
+}
