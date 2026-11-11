@@ -91,3 +91,54 @@ h1 {
     text-align: center;
     font-size: 1.4em;
 }
+
+/* =========================================
+   6. Mobile Responsive Layout (Phones)
+   ========================================= */
+@media (max-width: 768px) {
+    #Title {
+        font-size: 12vw;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .SLATE,
+    .LIVE {
+        width: 100%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    /* Put LIVE games at the top on mobile so users see active scores first */
+    .LIVE {
+        order: -1;
+    }
+
+    .Game h2 {
+        font-size: 1em;
+    }
+
+    .Game h3 {
+        font-size: 1.1em;
+    }
+
+    .Scoreboard {
+        gap: 8px;
+    }
+
+    .Scoreboard h2 {
+        font-size: 1em;
+    }
+
+    .Scoreboard h3 {
+        font-size: 1.2em;
+    }
+
+    .Scoreboard p {
+        font-size: 1em;
+    }
+}
